@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/cloud.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <form method="GET"> 
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+        <p id="first"></p>
+        <p id="second"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js"></script>
+</body>
+</html>
