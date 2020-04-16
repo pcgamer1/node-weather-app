@@ -10,7 +10,7 @@ const url = 'http://api.weatherstack.com/current?access_key=72430a409c13e8b75c5c
             callback('Unable to find location')
         }
         else{
-            callback(undefined, 'The current temperature is ' + body.current.temperature + ' and it feels like ' + body.current.feelslike)
+            callback(undefined, 'The current temperature is ' + body.current.temperature + ' and it feels like ' + body.current.feelslike +'. The humidity outside is ' + body.current.humidity + '%.')
         }
     })
 }
